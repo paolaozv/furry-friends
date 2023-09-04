@@ -1,5 +1,6 @@
 // import styles from './page.module.css'
 import Layout from "./components/Layout";
+import PetsSection from "./components/PetsSection";
 
 export const metadata = {
   title: 'Adopt a furry friend',
@@ -7,6 +8,7 @@ export const metadata = {
 };
 
 export default function Home() {
+
   return (
     <main>
       <Layout>
@@ -25,6 +27,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <PetsSection />
           </div>
         </div>
       </Layout>

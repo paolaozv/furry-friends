@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { onAuthStateChanged, getAuth, signOut } from "firebase/auth";
 import Loading from "@/app/components/ui/Loading";
 import firebase_app from "@/app/firebase/config";
-import getDocumentData from "@/app/firebase/firestore/getData";
+import getUserData from "@/app/firebase/firestore/getUserData";
 
 const auth = getAuth(firebase_app);
 
@@ -24,9 +24,9 @@ export const AuthContextProvider = ({
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, (user) => {
 			if (user) {
-				getDocumentData("users", user.uid).then((result) => {
+				getUserData("users", user.uid).then((result) => {
 					console.log(result);
-					setUserInfo(result);
+					setUserInfo({...result, uid: user.uid});
 				});
 				setUser(user);
 			} else {

@@ -19,7 +19,7 @@ const ProtectedNavbar = () => {
 							<Link href="/login" className="bg-primary rounded-lg px-4 py-1 text-primary-black">Sign in</Link>
 						</div> :
 						<div>
-							<button onClick={() => onSignOut()} className="bg-primary rounded-lg px-4 py-1 text-primary-black">Log out</button>
+							<button onClick={() => onSignOut()} className="bg-white border border-black rounded-lg px-4 py-1 text-primary-black">Log out</button>
 						</div>
 					}
 				</div>

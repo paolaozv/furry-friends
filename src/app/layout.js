@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { AuthContextProvider } from "@/context/auth.context";
+import { PetsContextProvider } from "@/context/pets.context";
 import ProtectedRoute from "@/app/components/ProtectedRoute";
 import UnProtectedRoute from "@/app/components/UnProtectedRoute";
 import "./globals.css"
@@ -12,7 +13,7 @@ const inter = Inter({
   display: 'swap'
 })
 
-const noAuthRequired = ["/", "/login", "/adopt", "/rehome"];
+const noAuthRequired = ["/", "/login", "/register-adoption", "/register-rehoming"];
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -21,14 +22,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
         <AuthContextProvider>
-          {noAuthRequired.includes(pathname) ?
-            <UnProtectedRoute>
-              {children}
-            </UnProtectedRoute> :
-            <ProtectedRoute>
-              {children}
-            </ProtectedRoute>
-          }
+          <PetsContextProvider>
+            {noAuthRequired.includes(pathname) ?
+              <UnProtectedRoute>
+                {children}
+              </UnProtectedRoute> :
+              <ProtectedRoute>
+                {children}
+              </ProtectedRoute>
+            }
+          </PetsContextProvider>
         </AuthContextProvider>
       </body>
     </html>

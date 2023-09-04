@@ -1,4 +1,5 @@
 // register page to rehome a pet
+import Link from "next/link";
 import Layout from "../components/Layout";
 import LoginForm from "../components/forms/LoginForm";
 
@@ -18,6 +19,12 @@ export default function Page() {
 					</div>
 					<div className="w-1/2 m-auto">
 						<LoginForm />
+						<p className="text-sm mt-2 text-center">
+							Are you new? Register
+							<Link href="/register-adoption" className="font-semibold underline mx-1">to adopt</Link>
+							or
+							<Link href="register-rehoming" className="font-semibold underline ml-1">to rehome</Link>
+						</p>
 					</div>
 				</div>
 			</div>

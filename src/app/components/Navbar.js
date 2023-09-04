@@ -14,10 +14,10 @@ const Navbar = () => {
 					<div>
 						<ul className="flex justify-between items-center">
 							<li className="m-5 text-primary-black">
-								<Link href="/adopt">I want to adopt</Link>
+								<Link href="/register-adoption">I want to adopt</Link>
 							</li>
 							<li className="m-5 text-primary-black">
-								<Link href="/rehome">I want to rehome</Link>
+								<Link href="/register-rehoming">I want to rehome</Link>
 							</li>
 						</ul>
 					</div>
