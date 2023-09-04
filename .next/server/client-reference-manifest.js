@@ -763,7 +763,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "*",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -771,7 +771,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -779,7 +779,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -789,7 +789,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/not-found:static/chunks/app/not-found.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -797,7 +797,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/not-found:static/chunks/app/not-found.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -805,7 +805,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/not-found:static/chunks/app/not-found.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -815,7 +815,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "*",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -823,7 +823,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -831,7 +831,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "default",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -839,7 +839,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "defaultHead",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -847,7 +847,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "charSet",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -855,7 +855,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "name",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -863,7 +863,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "content",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -871,7 +871,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"title\"",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -879,7 +879,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"base\"",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -887,7 +887,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"meta\"",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -895,7 +895,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "TODO(prateekbh@)",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -903,7 +903,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"https",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -911,7 +911,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "here",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -919,7 +919,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "https",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -927,7 +927,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "reduceComponentsToState",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -935,7 +935,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "headManager",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -943,7 +943,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "inAmpMode",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -951,7 +951,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "value",
         "chunks": [
-          "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -961,7 +961,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/PetCard.js",
         "name": "*",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -969,7 +969,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/PetCard.js",
         "name": "",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -977,7 +977,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/PetCard.js",
         "name": "default",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -1013,7 +1013,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/ui/BlurImage.js",
         "name": "*",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1021,7 +1021,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/ui/BlurImage.js",
         "name": "",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1029,7 +1029,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/app/components/ui/BlurImage.js",
         "name": "default",
         "chunks": [
-          "app/dashboard/page:static/chunks/app/dashboard/page.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -1065,7 +1065,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/auth.context.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1073,7 +1073,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/auth.context.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1081,7 +1081,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/auth.context.js",
         "name": "AuthContext",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1089,7 +1089,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/auth.context.js",
         "name": "AuthContextProvider",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1097,7 +1097,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/auth.context.js",
         "name": "useAuthContext",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -1107,7 +1107,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/pets.context.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1115,7 +1115,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/pets.context.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1123,7 +1123,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/pets.context.js",
         "name": "PetsContext",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1131,7 +1131,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/pets.context.js",
         "name": "PetsContextProvider",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
@@ -1139,7 +1139,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./src/context/pets.context.js",
         "name": "usePetsContext",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -1244,6 +1244,58 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/components/Navbar.js": {
+      "*": {
+        "id": "(sc_client)/./src/app/components/Navbar.js",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/components/Navbar.js",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/components/Navbar.js",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/components/PetsSection.js": {
+      "*": {
+        "id": "(sc_client)/./src/app/components/PetsSection.js",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/components/PetsSection.js",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/components/PetsSection.js",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
@@ -2988,7 +3040,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -2996,7 +3048,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3004,7 +3056,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3012,7 +3064,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3020,7 +3072,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3028,7 +3080,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3036,7 +3088,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3044,7 +3096,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3052,7 +3104,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3060,7 +3112,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3068,7 +3120,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3076,7 +3128,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/not-found:static/chunks/app/not-found.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3084,7 +3136,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3092,7 +3144,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3100,7 +3152,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3108,7 +3160,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3116,7 +3168,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3124,7 +3176,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3132,7 +3184,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3140,7 +3192,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3148,7 +3200,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "charSet",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3156,7 +3208,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "charSet",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3164,7 +3216,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "name",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3172,7 +3224,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "name",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3180,7 +3232,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "content",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3188,7 +3240,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "content",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3196,7 +3248,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"title\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3204,7 +3256,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"title\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3212,7 +3264,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"base\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3220,7 +3272,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"base\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3228,7 +3280,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"meta\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3236,7 +3288,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"meta\"",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3244,7 +3296,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "TODO(prateekbh@)",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3252,7 +3304,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "TODO(prateekbh@)",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3260,7 +3312,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"https",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3268,7 +3320,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"https",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3276,7 +3328,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "here",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3284,7 +3336,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "here",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3292,7 +3344,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "https",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3300,7 +3352,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "https",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3308,7 +3360,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "reduceComponentsToState",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3316,7 +3368,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "reduceComponentsToState",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3324,7 +3376,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "headManager",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3332,7 +3384,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "headManager",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3340,7 +3392,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "inAmpMode",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3348,7 +3400,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "inAmpMode",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3356,7 +3408,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "value",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3364,7 +3416,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "value",
       "chunks": [
-        "app/dashboard/layout:static/chunks/app/dashboard/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3372,7 +3424,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/PetCard.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3380,7 +3432,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/PetCard.js",
       "name": "",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3388,7 +3440,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/PetCard.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3420,7 +3472,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/ui/BlurImage.js",
       "name": "*",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3428,7 +3480,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/ui/BlurImage.js",
       "name": "",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3436,7 +3488,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/app/components/ui/BlurImage.js",
       "name": "default",
       "chunks": [
-        "app/dashboard/page:static/chunks/app/dashboard/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3468,7 +3520,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/auth.context.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3476,7 +3528,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/auth.context.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3484,7 +3536,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/auth.context.js",
       "name": "AuthContext",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3492,7 +3544,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/auth.context.js",
       "name": "AuthContextProvider",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3500,7 +3552,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/auth.context.js",
       "name": "useAuthContext",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3508,7 +3560,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/pets.context.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3516,7 +3568,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/pets.context.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3524,7 +3576,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/pets.context.js",
       "name": "PetsContext",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3532,7 +3584,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/pets.context.js",
       "name": "PetsContextProvider",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3540,7 +3592,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./src/context/pets.context.js",
       "name": "usePetsContext",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -3651,6 +3703,54 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/Navbar.js": {
+      "id": "(app-client)/./src/app/components/Navbar.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/Navbar.js#": {
+      "id": "(app-client)/./src/app/components/Navbar.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/Navbar.js#default": {
+      "id": "(app-client)/./src/app/components/Navbar.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/PetsSection.js": {
+      "id": "(app-client)/./src/app/components/PetsSection.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/PetsSection.js#": {
+      "id": "(app-client)/./src/app/components/PetsSection.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/paolaortizdezevallos/iubh/2-SEMESTER/JAVA-AND-WEB-DEVELOPMENT/furry-friends/src/app/components/PetsSection.js#default": {
+      "id": "(app-client)/./src/app/components/PetsSection.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     }
