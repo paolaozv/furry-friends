@@ -5,8 +5,8 @@ const db = getFirestore(firebase_app);
 
 export default async function getPetsList() {
   try {
-    const result = await getDocs(collection(db, "pets"));
-    return result;
+    const response = await getDocs(collection(db, "pets"));
+    return response;
   } catch (error) {
     console.log(error);
   }

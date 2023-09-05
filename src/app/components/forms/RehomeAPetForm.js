@@ -7,6 +7,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Spinner from "../ui/Spinner";
 import createPetProfile from "@/app/firebase/firestore/createPetProfile";
+import { useAuthContext } from "@/context/auth.context";
+import { usePetsContext } from "@/context/pets.context";
 
 const schema = yup.object().shape({
   name: yup.string().required("Field required"),
@@ -24,6 +26,8 @@ const schema = yup.object().shape({
 });
 
 const RehomeAPetForm = () => {
+  const { userInfo } = useAuthContext();
+  const { addAPetToPetsList } = usePetsContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -39,17 +43,31 @@ const RehomeAPetForm = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     setErrorMessage("");
-    await createPetProfile(data.name, data.age, data.breed, data.photo[0], data.description).then(() => {
+    try {
+      const response = await createPetProfile(data.name, data.age, data.breed, data.photo[0], data.description, userInfo.uid);
+
       setLoading(false);
+      const pet = {
+        id: response.doc.id,
+        name: data.name,
+        age: data.age,
+        breed: data.breed,
+        photo: response.url,
+        description: data.description,
+        uid: userInfo.uid
+      };
+      addAPetToPetsList(pet)
+      
+      // go to /dashboard
       return router.push("/dashboard");
-    }).catch((error) => {
+    } catch(error) {
       console.log("error", error);
       if (error) {
         setError(true);
         setErrorMessage(error.message);
         setLoading(false);
       }
-    });
+    }
   }
 
   return (

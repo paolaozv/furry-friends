@@ -10,7 +10,7 @@ const PetCard = ({ id, photo, name, age, breed, description }) => {
 
   return (
     <div>
-      <div className="h-64 w-96 relative">
+      <div className="w-96 relative">
         <BlurImage photo={photo} name={name} />
       </div>
       <div className="border-x border-b rounded-b-lg py-6 px-4">

@@ -6,21 +6,23 @@ import firebase_app from "../config";
 const db = getFirestore(firebase_app);
 const storage = getStorage(firebase_app);
 
-export default async function createPetProfile(name, age, breed, photo, description) {
+export default async function createPetProfile(name, age, breed, photo, description, uid) {
   const imageRef = ref(storage, `furry-friends/images/${name}`);
+
   try {
-    const result = uploadBytes(imageRef, photo).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then(async (url) => {
-        return await addDoc(collection(db, "pets"), {
-          name,
-          age,
-          breed,
-          photo: url,
-          description
-        })
-      });
+
+    const result = await uploadBytes(imageRef, photo);
+    const url = await getDownloadURL(result.ref);
+    const doc = await addDoc(collection(db, "pets"), {
+      uid,
+      name,
+      age,
+      breed,
+      photo: url,
+      description
     });
-    return result;
+    
+    return { doc, url };
   } catch (error) {
     console.log(error);
   }

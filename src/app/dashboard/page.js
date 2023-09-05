@@ -28,7 +28,6 @@ export default function Page() {
 
   const getPetsForAdoption = async () => {
     await getPetsList().then((data) => {
-      console.log("DATA", data);
       setPetsList(data.docs.map((item) => {
         return { ...item.data(), id: item.id }
       })); 
