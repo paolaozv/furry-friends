@@ -1,7 +1,7 @@
 "use client" // This is a client component
 import { useEffect, useState } from "react";
 import { usePetsContext } from "@/context/pets.context";
-import getPetsList from "@/app/firebase/firestore/getPetsList";
+import getAllPets from "../firebase/firestore/getAllPets";
 import PetListForAdoption from "@/app/components/list/PetListForAdoption";
 
 const PetsSection = () => {
@@ -17,12 +17,11 @@ const PetsSection = () => {
   }, [petsList]);
 
   const getPetsForAdoption = async () => {
-    await getPetsList().then((data) => {
-      console.log("DATA", data);
-      setPetsList(data.docs.map((item) => {
-        return { ...item.data(), id: item.id }
-      })); 
-    })
+    const response = await getAllPets();
+
+    setPetsList(response.docs.map((item) => {
+      return { ...item.data(), id: item.id }
+    }));
   }
 
   return (

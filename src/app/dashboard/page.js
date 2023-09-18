@@ -7,31 +7,44 @@ import Link from "next/link";
 import { useAuthContext } from "@/context/auth.context";
 import { usePetsContext } from "@/context/pets.context";
 import firebase_app from "@/app/firebase/config";
-import getPetsList from "@/app/firebase/firestore/getPetsList";
+import getAllPets from "../firebase/firestore/getAllPets";
+import getPetsByUid from "../firebase/firestore/getPetsByUid";
 import PetListForAdoption from "@/app/components/list/PetListForAdoption";
 import RemovePetPopup from "@/app/components/RemovePetPopup";
 
 const db = getFirestore(firebase_app);
 
 export default function Page() {
-  const { userInfo } = useAuthContext();
+  const { userInfo, user } = useAuthContext();
   const { addAllPetsToPetsList, pets } = usePetsContext();
   const [petsList, setPetsList] = useState([]);
 
   useEffect(() => {
     getPetsForAdoption();
-  }, []);
+  }, [userInfo]);
 
   useEffect(() => {
     addAllPetsToPetsList(petsList);
   }, [petsList]);
 
   const getPetsForAdoption = async () => {
-    await getPetsList().then((data) => {
-      setPetsList(data.docs.map((item) => {
-        return { ...item.data(), id: item.id }
-      })); 
-    })
+    try {
+      if (userInfo && userInfo.role === "admin") {
+        const response = await getPetsByUid(user.uid);
+
+        setPetsList(response.docs.map((item) => {
+          return { ...item.data(), id: item.id }
+        }));
+      } else {
+        const response = await getAllPets();
+
+        setPetsList(response.docs.map((item) => {
+          return { ...item.data(), id: item.id }
+        }));
+      }
+    } catch(error) {
+      console.log("error", error);
+    }
   }
 
   return (

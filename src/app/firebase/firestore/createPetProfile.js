@@ -10,7 +10,6 @@ export default async function createPetProfile(name, age, breed, photo, descript
   const imageRef = ref(storage, `furry-friends/images/${name}`);
 
   try {
-
     const result = await uploadBytes(imageRef, photo);
     const url = await getDownloadURL(result.ref);
     const doc = await addDoc(collection(db, "pets"), {

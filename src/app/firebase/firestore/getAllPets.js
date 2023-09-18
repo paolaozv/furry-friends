@@ -3,7 +3,7 @@ import firebase_app from "../config";
 
 const db = getFirestore(firebase_app);
 
-export default async function getPetsList() {
+export default async function getAllPets() {
   try {
     const response = await getDocs(collection(db, "pets"));
     return response;

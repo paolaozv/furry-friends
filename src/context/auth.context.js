@@ -25,7 +25,6 @@ export const AuthContextProvider = ({
 		const unsubscribe = onAuthStateChanged(auth, (user) => {
 			if (user) {
 				getUserData("users", user.uid).then((result) => {
-					console.log(result);
 					setUserInfo({...result, uid: user.uid});
 				});
 				setUser(user);
