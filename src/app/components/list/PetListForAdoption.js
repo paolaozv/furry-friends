@@ -18,6 +18,8 @@ const PetListForAdoption = ({ pets }) => {
                   age={pet.age}
                   breed={pet.breed}
                   description={pet.description}
+                  rescueGroup={pet.uid}
+                  requestSent={pet.requestSent}
                 />
               </div>
             )

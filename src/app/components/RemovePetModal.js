@@ -4,17 +4,21 @@ import { usePetsContext } from "@/context/pets.context";
 import Spinner from "../components/ui/Spinner";
 import deleteAPetProfile from "../firebase/firestore/deleteAPetProfile";
 
-const RemovePetPopup = () => {
+const RemovePetModal = () => {
   const { openModal, toggleModalToRemoveAPet, idToRemove, removeAPetFromPetsList } = usePetsContext();
   const [loading, setLoading] = useState(false);
 
   const confirmDeletion = async () => {
     setLoading(true);
-    await deleteAPetProfile(idToRemove).then(() => {
+
+    try {
+      await deleteAPetProfile(idToRemove);
       setLoading(false);
       toggleModalToRemoveAPet();
       removeAPetFromPetsList(idToRemove);
-    });
+    } catch(error) {
+      console.log(error);
+    }
   }
 
   return (
@@ -46,4 +50,4 @@ const RemovePetPopup = () => {
   )
 }
 
-export default RemovePetPopup;
+export default RemovePetModal;

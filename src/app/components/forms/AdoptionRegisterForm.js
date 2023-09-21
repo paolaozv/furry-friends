@@ -35,17 +35,25 @@ const AdoptionRegisterForm = () => {
 	const onSubmit = async (data) => {
 		setLoading(true);
 		setErrorMessage("");
-		await signUp(data.email, data.password, data.firstName, data.lastName, "user").then(() => {
+
+		try {
+			const response = await signUp(data.email, data.password, data.firstName, data.lastName, "user");
+
+			if (response) {
+				setError(true);
+				setErrorMessage(response.message);
+				setLoading(false);
+			}
+
 			setLoading(false);
-			return router.push("/account");
-		}).catch((error) => {
-			console.log(error.message);
+			return router.push("/dashboard");
+		} catch(error) {
 			if (error) {
 				setError(true);
 				setErrorMessage(error.message);
 				setLoading(false);
 			}
-		});
+		}
 	}
 
 	return (

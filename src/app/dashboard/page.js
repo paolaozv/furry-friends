@@ -10,18 +10,19 @@ import firebase_app from "@/app/firebase/config";
 import getAllPets from "../firebase/firestore/getAllPets";
 import getPetsByUid from "../firebase/firestore/getPetsByUid";
 import PetListForAdoption from "@/app/components/list/PetListForAdoption";
-import RemovePetPopup from "@/app/components/RemovePetPopup";
+import RemovePetModal from "@/app/components/RemovePetModal";
+import ConfirmPetAdoptionRequestModal from "@/app/components/ConfirmPetAdoptionRequestModal";
 
 const db = getFirestore(firebase_app);
 
 export default function Page() {
-  const { userInfo, user } = useAuthContext();
+  const { userInfo, user, requests } = useAuthContext();
   const { addAllPetsToPetsList, pets } = usePetsContext();
   const [petsList, setPetsList] = useState([]);
 
   useEffect(() => {
     getPetsForAdoption();
-  }, [userInfo]);
+  }, [userInfo, requests]);
 
   useEffect(() => {
     addAllPetsToPetsList(petsList);
@@ -33,13 +34,15 @@ export default function Page() {
         const response = await getPetsByUid(user.uid);
 
         setPetsList(response.docs.map((item) => {
-          return { ...item.data(), id: item.id }
+          const requestSent = requests.includes(item.id);
+          return { ...item.data(), id: item.id, requestSent }
         }));
       } else {
         const response = await getAllPets();
 
         setPetsList(response.docs.map((item) => {
-          return { ...item.data(), id: item.id }
+          const requestSent = requests.includes(item.id);
+          return { ...item.data(), id: item.id, requestSent }
         }));
       }
     } catch(error) {
@@ -79,18 +82,24 @@ export default function Page() {
         </div>
         {
           userInfo && userInfo.role === "admin" &&
-          <div>
-            <Link href="/dashboard/rehoming" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Create a pet profile</Link>
+          <div className="flex">
+            <div>
+              <Link href="/dashboard/rehoming" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Create a pet profile</Link>
+            </div>
+            <div className="ml-8">
+              <Link href="/dashboard/requests" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Check pet status</Link>
+            </div>
           </div>
         }
       </div>
       <div className="mt-24">
-        <h2 className="text-center font-semibold text-3xl leading-normal">Dogs ready for adoption</h2>
+        <h2 className="text-center font-semibold text-3xl leading-normal">Pets ready for adoption</h2>
         <div className="mt-16">
           <PetListForAdoption pets={pets} />
         </div>
       </div>
-      <RemovePetPopup />
+      <RemovePetModal />
+      <ConfirmPetAdoptionRequestModal />
     </div>
   )
 }

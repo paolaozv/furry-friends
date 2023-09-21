@@ -1,12 +1,18 @@
 "use client"; //  This is a client component
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useAuthContext } from "@/context/auth.context";
 import { usePetsContext } from "@/context/pets.context";
 import BlurImage from "./ui/BlurImage";
 
-const PetCard = ({ id, photo, name, age, breed, description }) => {
+const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, requestSent }) => {
   const { userInfo } = useAuthContext();
-  const { toggleModalToRemoveAPet } = usePetsContext();
+  const { toggleModalToRemoveAPet, toggleModalRequestForAdoption } = usePetsContext();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    setUser(userInfo);
+  }, [userInfo]);
 
   return (
     <div>
@@ -21,15 +27,31 @@ const PetCard = ({ id, photo, name, age, breed, description }) => {
         <p className="font-light text-sm">{breed}</p>
         <p className="mt-2">{description}</p>
         <div className="text-center mt-6">
-          {!userInfo &&
+          {!user &&
             <Link href="/login" className="bg-primary rounded-lg px-6 py-1 text-primary-black">I want to adopt</Link>
           }
-          {userInfo && userInfo.role === "admin" &&
+          {user && user.role === "admin" &&
             <button
               className="bg-primary rounded-lg px-6 py-1 text-primary-black"
               onClick={() => toggleModalToRemoveAPet(id)}
             >
               Remove for adoption
+            </button>
+          }
+          {user && user.role === "user" && requestSent === false &&
+            <button
+              className="bg-primary rounded-lg px-6 py-1 text-primary-black"
+              onClick={() => toggleModalRequestForAdoption(id, rescueGroup)}
+            >
+              I want to adopt
+            </button>
+          }
+          {user && user.role === "user" && requestSent === true &&
+            <button
+              className="bg-secondary bg-opacity-30 rounded-lg px-6 py-1 text-secondary cursor-not-allowed"
+              disabled
+            >
+              Request sent
             </button>
           }
         </div>

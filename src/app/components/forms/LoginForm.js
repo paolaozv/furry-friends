@@ -2,7 +2,7 @@
 "use client" // This is a client component
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import signIn from "../../firebase/auth/signin";
@@ -29,16 +29,25 @@ const LoginForm = () => {
 	const onSubmit = async (data) => {
 		setLoading(true);
 		setErrorMessage("");
-		await signIn(data.email, data.password).then((info) => {
+
+		try {
+			const response = await signIn(data.email, data.password);
+
+			if (response) {
+				setError(true);
+				setErrorMessage(response.message);
+				setLoading(false);
+			}
+		
 			setLoading(false);
 			return router.push("/dashboard");
-		}).catch((error) => {
+		} catch(error) {
 			if (error) {
 				setError(true);
 				setErrorMessage(error.message);
 				setLoading(false);
 			}
-		});
+		}
 	}
 
 	return (

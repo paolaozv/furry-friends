@@ -35,17 +35,25 @@ const RehomeRegisterForm = () => {
 	const onSubmit = async (data) => {
 		setLoading(true);
 		setErrorMessage("");
-		await signUp(data.email, data.password, data.firstName, data.lastName, "admin").then(() => {
+
+		try {
+			const response = await signUp(data.email, data.password, data.firstName, data.lastName, "admin");
+
+			if (response) {
+				setError(true);
+				setErrorMessage(response.message);
+				setLoading(false);
+			}
+
 			setLoading(false);
 			return router.push("/dashboard");
-		}).catch((error) => {
-			console.log(error.message);
+		} catch(error) {
 			if (error) {
 				setError(true);
 				setErrorMessage(error.message);
 				setLoading(false);
 			}
-		});
+		}
 	}
 
 	return (

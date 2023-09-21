@@ -56,16 +56,31 @@ export const PetsContextProvider = ({
     });
   }
 
+  const toggleModalRequestForAdoption = (id = state.idPetAdoption, rescueGroup = state.rescueGroupId) => {
+    dispatch({
+      type: "TOGGLE_MODAL_REQUEST_FOR_ADOPTION",
+      payload: {
+        rescueGroupId: rescueGroup,
+        idPetAdoption: id,
+        confirmAdoptionModal: !state.confirmAdoptionModal
+      }
+    });
+  }
+
   return (
     <PetsContext.Provider
       value={{
         pets: state.pets,
         idToRemove: state.idToRemove,
         openModal: state.openModal,
+        idPetAdoption: state.idPetAdoption,
+        confirmAdoptionModal: state.confirmAdoptionModal,
+        rescueGroupId: state.rescueGroupId,
         addAPetToPetsList,
         addAllPetsToPetsList,
         removeAPetFromPetsList,
-        toggleModalToRemoveAPet
+        toggleModalToRemoveAPet,
+        toggleModalRequestForAdoption
       }}
     >
       {children}
