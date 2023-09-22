@@ -28,7 +28,8 @@ export const AuthContextProvider = ({
 			if (user) {
 				getUserData("users", user.uid).then((result) => {
 					setUserInfo({...result, uid: user.uid});
-					updateUserRequests(result.requests);
+					if (result.requests)
+						updateUserRequests(result.requests);
 				});
 				setUser(user);
 			} else {
@@ -85,6 +86,7 @@ export const AuthContextProvider = ({
 				requests: state.user.requests,
 				onSignOut,
 				addARequestToUser,
+				updateUserRequests
 			}}
 		>
 			{loading ? <Loading /> : children}

@@ -2,9 +2,19 @@
 "use client"; // This is a client component
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useAuthContext } from "@/context/auth.context";
 import RehomeAPetForm from "../../components/forms/RehomeAPetForm";
 
 export default function Page() {
+  const { userInfo } = useAuthContext();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (userInfo && userInfo.role === "user") router.push("/dashboard");
+  }, [userInfo, router]);
+
   return (
     <div className="container mx-auto px-20 py-6">
       <div>

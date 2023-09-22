@@ -1,7 +1,10 @@
 // pets context
 "use client"; // This is a client component
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer, useEffect, useState } from "react";
 import { initialState, petsReducer } from "./reducer/pets.reducer";
+import { useAuthContext } from "@/context/auth.context";
+import getAllPets from "@/app/firebase/firestore/getAllPets";
+import getPetsByUid from "@/app/firebase/firestore/getPetsByUid";
 
 export const PetsContext = createContext({});
 
@@ -11,6 +14,38 @@ export const PetsContextProvider = ({
   children
 }) => {
   const [state, dispatch] = useReducer(petsReducer, initialState);
+  const { userInfo, user, requests } = useAuthContext();
+  const [petsList, setPetsList] = useState([]);
+
+  useEffect(() => {
+    getPetsForAdoption();
+  }, [userInfo, requests]);
+
+  useEffect(() => {
+    addAllPetsToPetsList(petsList);
+  }, [petsList]);
+
+  const getPetsForAdoption = async () => {
+    try {
+      if (userInfo && userInfo.role === "admin") {
+        const response = await getPetsByUid(user.uid);
+
+        setPetsList(response.docs.map((item) => {
+          const requestSent = requests.includes(item.id);
+          return { ...item.data(), id: item.id, requestSent }
+        }));
+      } else {
+        const response = await getAllPets();
+
+        setPetsList(response.docs.map((item) => {
+          const requestSent = requests.includes(item.id);
+          return { ...item.data(), id: item.id, requestSent }
+        }));
+      }
+    } catch(error) {
+      console.log("error", error);
+    }
+  }
 
   const addAPetToPetsList = (pet) => {
     const updatedPetsList = state.pets.concat(pet);

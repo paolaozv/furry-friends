@@ -1,14 +1,11 @@
 // Dashboard Page
 "use client"; // This is a client component
-import { useEffect, useState } from "react";
 import { getFirestore } from "firebase/firestore";
 import Image from "next/image";
 import Link from "next/link";
 import { useAuthContext } from "@/context/auth.context";
 import { usePetsContext } from "@/context/pets.context";
 import firebase_app from "@/app/firebase/config";
-import getAllPets from "../firebase/firestore/getAllPets";
-import getPetsByUid from "../firebase/firestore/getPetsByUid";
 import PetListForAdoption from "@/app/components/list/PetListForAdoption";
 import RemovePetModal from "@/app/components/RemovePetModal";
 import ConfirmPetAdoptionRequestModal from "@/app/components/ConfirmPetAdoptionRequestModal";
@@ -16,39 +13,8 @@ import ConfirmPetAdoptionRequestModal from "@/app/components/ConfirmPetAdoptionR
 const db = getFirestore(firebase_app);
 
 export default function Page() {
-  const { userInfo, user, requests } = useAuthContext();
-  const { addAllPetsToPetsList, pets } = usePetsContext();
-  const [petsList, setPetsList] = useState([]);
-
-  useEffect(() => {
-    getPetsForAdoption();
-  }, [userInfo, requests]);
-
-  useEffect(() => {
-    addAllPetsToPetsList(petsList);
-  }, [petsList]);
-
-  const getPetsForAdoption = async () => {
-    try {
-      if (userInfo && userInfo.role === "admin") {
-        const response = await getPetsByUid(user.uid);
-
-        setPetsList(response.docs.map((item) => {
-          const requestSent = requests.includes(item.id);
-          return { ...item.data(), id: item.id, requestSent }
-        }));
-      } else {
-        const response = await getAllPets();
-
-        setPetsList(response.docs.map((item) => {
-          const requestSent = requests.includes(item.id);
-          return { ...item.data(), id: item.id, requestSent }
-        }));
-      }
-    } catch(error) {
-      console.log("error", error);
-    }
-  }
+  const { userInfo } = useAuthContext();
+  const { pets } = usePetsContext();
 
   return (
     <div className="container relative mx-auto px-20 py-6">
@@ -87,7 +53,7 @@ export default function Page() {
               <Link href="/dashboard/rehoming" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Create a pet profile</Link>
             </div>
             <div className="ml-8">
-              <Link href="/dashboard/requests" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Check pet status</Link>
+              <Link href="/dashboard/requests" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Check applications</Link>
             </div>
           </div>
         }

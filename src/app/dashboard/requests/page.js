@@ -1,6 +1,7 @@
 // Requests page
 "use client"; // This is a client component
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useAuthContext } from "@/context/auth.context";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +9,21 @@ import getAllRequests from "@/app/firebase/firestore/getAllRequests";
 import RequestList from "@/app/components/list/RequestList";
 
 export default function Page() {
-  const { user } = useAuthContext();
+  const { user, userInfo, updateUserRequests } = useAuthContext();
   const [requests, setRequests] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (userInfo && userInfo.role === "user") router.push("/dashboard");
+  }, [userInfo, router]);
 
   useEffect(() => {
     getAllRequestsForAdoption();
   }, []);
+
+  useEffect(() => {
+    updateUserRequests(requests);
+  }, [requests]);
 
   const getAllRequestsForAdoption = async () => {
     try {
@@ -44,7 +54,7 @@ export default function Page() {
               <p className="ml-2 text-sm font-light text-primary-black">Go back</p>
             </Link>
           </div>
-          <h1 className="text-3xl font-bold text-primary-black">Check pet status</h1>
+          <h1 className="text-3xl font-bold text-primary-black">Applications</h1>
         </div>
         <div className="mt-16 mx-auto">
           <RequestList requests={requests} />

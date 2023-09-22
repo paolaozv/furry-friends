@@ -1,4 +1,4 @@
-// import PetCard from "../PetCard";
+import RequestCard from "../RequestCard";
 
 const RequestList = ({ requests }) => {
   return (
@@ -7,11 +7,15 @@ const RequestList = ({ requests }) => {
         <div className="mt-36 text-center">There is no applications yet</div>
       }
       {requests && requests.length > 0 &&
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 gap-4">
           {requests.map((request) => {
             return (
               <div key={request.id}>
-                {request.applicant}
+                <RequestCard
+                  applicant={request.applicant}
+                  email={request.applicantEmail}
+                  petId={request.idPet}
+                />
               </div>
             )
           })}
