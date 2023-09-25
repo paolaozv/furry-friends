@@ -12,14 +12,14 @@ export default function Page() {
 	return (
 		<main>
 			<Layout />
-			<div className="py-16 mb-10">
-				<div className="container mx-auto px-16">
-					<div className="mb-10">
-						<h1 className="text-center text-4xl font-bold text-primary-black">Sign in</h1>
+			<div className="py-8 lg:py-16 mb-10">
+				<div className="container mx-auto px-8 lg:px-16">
+					<div className="mb-8 md:mb-10">
+						<h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-primary-black">Sign in</h1>
 					</div>
-					<div className="w-1/2 m-auto">
+					<div className="md:w-1/2 m-auto">
 						<LoginForm />
-						<p className="text-sm mt-2 text-center">
+						<p className="text-xs md:text-sm mt-2 text-center">
 							Are you new? Register
 							<Link href="/register-adoption" className="font-semibold underline mx-1">to adopt</Link>
 							or

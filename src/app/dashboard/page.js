@@ -17,8 +17,8 @@ export default function Page() {
   const { pets } = usePetsContext();
 
   return (
-    <div className="container relative mx-auto px-20 py-6">
-      <div className="flex items-center justify-between">
+    <div className="container relative mx-auto px-8 lg:px-20 py-6">
+      <div className="md:flex md:items-center md:justify-between">
         <div className="flex items-center">
           <div className="mr-4">
             <Image
@@ -32,15 +32,15 @@ export default function Page() {
             />
           </div>
           <div>
-            <h1 className="font-bold text-4xl leading-normal">
+            <h1 className="font-bold text-xl md:text-2xl xl:text-4xl leading-normal">
               Welcome
               {userInfo && <span className="text-primary"> {userInfo.firstName}!</span>}
             </h1>
             {userInfo && userInfo.role === "user" ?
-              <p className="text-base">
+              <p className="text-sm xl:text-base">
                 Adopt a furry friend.
               </p> :
-              <p className="text-base">
+              <p className="text-sm xl:text-base">
                 Rehome a furry friend.
               </p>
             }
@@ -48,19 +48,19 @@ export default function Page() {
         </div>
         {
           userInfo && userInfo.role === "admin" &&
-          <div className="flex">
-            <div>
-              <Link href="/dashboard/rehoming" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Create a pet profile</Link>
+          <div className="mt-6 md:mt-0 sm:flex sm:justify-center md:justify-start text-center md:text-left">
+            <div className="mb-6 sm:mb-0">
+              <Link href="/dashboard/rehoming" className="bg-primary rounded-lg px-2 py-2 xl:px-4 xl:py-3 text-primary-black text-sm xl:text-base">Create a pet profile</Link>
             </div>
-            <div className="ml-8">
-              <Link href="/dashboard/requests" className="bg-primary rounded-lg px-4 py-3 text-primary-black">Check applications</Link>
+            <div className="sm:ml-4 md:ml-8">
+              <Link href="/dashboard/requests" className="bg-primary rounded-lg px-2 py-2 xl:px-4 xl:py-3 text-primary-black text-sm xl:text-base">Check applications</Link>
             </div>
           </div>
         }
       </div>
-      <div className="mt-24">
-        <h2 className="text-center font-semibold text-3xl leading-normal">Pets ready for adoption</h2>
-        <div className="mt-16">
+      <div className="mt-10 xl:mt-24">
+        <h2 className="text-center font-semibold text-xl md:text-2xl xl:text-3xl leading-normal">Pets ready for adoption</h2>
+        <div className="mt-10 lg:mt-16">
           <PetListForAdoption pets={pets} />
         </div>
       </div>

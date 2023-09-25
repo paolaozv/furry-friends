@@ -15,31 +15,31 @@ const RequestCard = ({ applicant, email, petId }) => {
 
   return (
     <div className="border border-solid border-primary-black border-opacity-40 rounded-lg p-4">
-      <div className="flex justify-between items-center mb-4">
-        <div className="text-primary-black">
-          <h6 className="mb-1">
+      <div className="md:flex md:justify-between md:items-center mb-4">
+        <div className="text-primary-black mb-4 md:mb-0">
+          <h6 className="mb-1 text-sm md:text-base">
             <span className="font-semibold">Applicant: </span>
             {applicant}
           </h6>
-          <h6>
+          <h6 className="text-sm md:text-base">
             <span className="font-semibold">Applicant email: </span>
             {email}
           </h6>
         </div>
         <a
           href={`mailto:${email}?subject=Adoption Form to adopt ${pet && pet.name}`}
-          className="bg-primary rounded-lg px-6 py-1 text-primary-black">
+          className="bg-primary rounded-lg px-3 md:px-6 py-1 text-primary-black text-sm md:text-base">
           Contact applicant
         </a>
       </div>
       <div className="border-t border-solid border-primary-black border-opacity-40"></div>
       <div className="mt-4 text-primary-black">
-        <h6 className="font-semibold">Pet Information</h6>
+        <h6 className="font-semibold text-sm md:text-base">Pet Information</h6>
         <div className="flex justify-between items-start">
           <div>
-            <p>Name: {pet && pet.name}</p>
-            <p>Breed: {pet && pet.breed}</p>
-            <p>Age: {pet && pet.age}</p>
+            <p className="text-sm md:text-base">Name: {pet && pet.name}</p>
+            <p className="text-sm md:text-base">Breed: {pet && pet.breed}</p>
+            <p className="text-sm md:text-base">Age: {pet && pet.age}</p>
           </div>
           <div>
             <div

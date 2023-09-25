@@ -13,7 +13,7 @@ const Logo = () => {
 					height={32}
 					priority
 				/>
-				<p className="text-base ml-4 text-primary-black">Adopt a furry friend</p>
+				<p className="text-sm lg:text-base ml-4 text-primary-black">Adopt a furry friend</p>
 			</div>
 		</Link>
 	)

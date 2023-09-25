@@ -16,23 +16,23 @@ const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, reques
 
   return (
     <div>
-      <div className="w-96 relative">
+      <div className="2xl:w-96 relative">
         <BlurImage photo={photo} name={name} />
       </div>
-      <div className="border-x border-b rounded-b-lg py-6 px-4">
+      <div className="border-x border-b rounded-b-lg py-4 px-3 md:py-6 md:px-4">
         <div className="flex justify-between items-center">
-          <h4 className="font-semibold text-lg">{name}</h4>
-          <p>{age}</p>
+          <h4 className="font-semibold text-base lg:text-lg">{name}</h4>
+          <p className="text-sm lg:text-base">Age: {age}</p>
         </div>
-        <p className="font-light text-sm">{breed}</p>
-        <p className="mt-2">{description}</p>
-        <div className="text-center mt-6">
+        <p className="font-light text-xs lg:text-sm">{breed}</p>
+        <p className="mt-2 text-sm lg:text-base">{description}</p>
+        <div className="text-center mt-3 lg:mt-6">
           {!user &&
-            <Link href="/login" className="bg-primary rounded-lg px-6 py-1 text-primary-black">I want to adopt</Link>
+            <Link href="/login" className="bg-primary rounded-lg px-3 lg:px-6 py-1 text-primary-black text-sm lg:text-base">I want to adopt</Link>
           }
           {user && user.role === "admin" &&
             <button
-              className="bg-primary rounded-lg px-6 py-1 text-primary-black"
+              className="bg-primary rounded-lg px-3 lg:px-6 py-1 text-primary-black text-sm lg:text-base"
               onClick={() => toggleModalToRemoveAPet(id)}
             >
               Remove for adoption
@@ -40,7 +40,7 @@ const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, reques
           }
           {user && user.role === "user" && requestSent === false &&
             <button
-              className="bg-primary rounded-lg px-6 py-1 text-primary-black"
+              className="bg-primary rounded-lg px-3 lg:px-6 py-1 text-primary-black text-sm lg:text-base"
               onClick={() => toggleModalRequestForAdoption(id, rescueGroup)}
             >
               I want to adopt
@@ -48,7 +48,7 @@ const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, reques
           }
           {user && user.role === "user" && requestSent === true &&
             <button
-              className="bg-secondary bg-opacity-30 rounded-lg px-6 py-1 text-secondary cursor-not-allowed"
+              className="bg-secondary bg-opacity-30 rounded-lg px-3 lg:px-6 py-1 text-secondary cursor-not-allowed text-sm lg:text-base"
               disabled
             >
               Request sent

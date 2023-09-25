@@ -72,9 +72,9 @@ const RehomeAPetForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="grid grid-cols-2 gap-16 mb-6">
-        <label>
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+      <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-16 mb-6">
+        <label className="mb-5 xl:mb-0 inline-block w-full xl:inline">
+          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
             Pet's name
           </span>
           <input
@@ -82,12 +82,12 @@ const RehomeAPetForm = () => {
             type="text"
 						name="name"
 						placeholder="Pet's name"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
           />
           <p role="alert" className="text-red-700 text-xs">{errors.name?.message}</p>
         </label>
         <label>
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
             Pet's age
           </span>
           <input
@@ -95,14 +95,14 @@ const RehomeAPetForm = () => {
             type="text"
 						name="age"
 						placeholder="Pet's age"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
           />
           <p role="alert" className="text-red-700 text-xs">{errors.age?.message}</p>
         </label>
       </div>
-      <div className="grid grid-cols-2 gap-16 mb-6">
-        <label>
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 mb-6">
+        <label className="mb-5 xl:mb-0 inline-block w-full xl:inline">
+          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
             Pet's breed
           </span>
           <input
@@ -110,12 +110,12 @@ const RehomeAPetForm = () => {
             type="text"
 						name="breed"
 						placeholder="Pet's breed"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
           />
           <p role="alert" className="text-red-700 text-xs">{errors.breed?.message}</p>
         </label>
         <label>
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
             Upload pet's photo
           </span>
           <input
@@ -123,14 +123,14 @@ const RehomeAPetForm = () => {
             type="file"
             name="photo"
             accept="image/*"
-            className="mt-1 w-full text-sm text-slate-400 border border-slate-300 shadow-sm bg-red rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 file:bg-slate-100 file:border-none file:py-2 file:text-slate-700"
+            className="mt-1 w-full text-xs sm:text-sm text-slate-400 border border-slate-300 shadow-sm bg-red rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 file:bg-slate-100 file:border-none file:py-2 file:text-slate-700"
           />
           <p role="alert" className="text-red-700 text-xs">{errors.photo?.message}</p>
         </label>
       </div>
       <div>
         <label>
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
             Pet's description
           </span>
           <textarea
@@ -139,7 +139,7 @@ const RehomeAPetForm = () => {
             rows={8}
 						name="description"
 						placeholder="Pet's description"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
           />
           <p role="alert" className="text-red-700 text-xs">{errors.description?.message}</p>
         </label>
@@ -153,7 +153,7 @@ const RehomeAPetForm = () => {
 				<button
           type="submit"
 					disabled={loading}
-					className={`w-full inline-flex items-center justify-center rounded-lg px-8 py-2 text-primary-black ${loading ? 'bg-primary/75 cursor-not-allowed' : 'bg-primary'}`}
+					className={`w-full inline-flex items-center justify-center rounded-lg px-8 py-2 text-primary-black text-sm lg:text-base ${loading ? 'bg-primary/75 cursor-not-allowed' : 'bg-primary'}`}
 				>
 					{loading && <Spinner />}
 					Create profile

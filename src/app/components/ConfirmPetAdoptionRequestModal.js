@@ -29,24 +29,24 @@ const ConfirmPetAdoptionRequestModal = () => {
     <div className={`${confirmAdoptionModal ? "block" : "hidden"} fixed top-0 left-0 z-[1055] h-full w-full overflow-y-auto overflow-x-hidden outline-none bg-gray-600 bg-opacity-50`}>
       <div className="relative w-full h-full flex justify-center bg-transparent">
         <div className="relative bg-white rounded-lg shadow m-auto">
-          <div className="p-10">
-            <p className="text-center">
-              After your confirmation, a request will be sent to the rescue group of this pet,<br />
+          <div className="p-6 md:p-10">
+            <p className="text-center text-sm md:text-base">
+              After your confirmation, a request will be sent to the rescue group of this pet,<br className="hidden md:inline" />
               and they will contact you by email.
             </p>
           </div>
           <div className="px-10 pb-10 rounded-b">
-            <div className="flex items-center justify-between w-3/4 mx-auto">
+            <div className="flex items-center justify-between md:w-3/4 mx-auto">
               <button
                 onClick={() => toggleModalRequestForAdoption()}
-                className="bg-white border rounded-lg px-10 py-1 text-primary-black"
+                className="bg-white border rounded-lg px-6 md:px-10 py-1 text-primary-black text-sm md:text-base"
               >
                 Cancel
               </button>
               <button
                 disabled={loading}
                 onClick={confirmRequest}
-                className="bg-primary rounded-lg px-8 py-1 text-primary-black flex items-center"
+                className="bg-primary rounded-lg px-6 md:px-8 py-1 text-primary-black flex items-center text-sm md:text-base"
               >
                 {loading && <Spinner />}
                 Confirm

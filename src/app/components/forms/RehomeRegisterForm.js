@@ -58,9 +58,9 @@ const RehomeRegisterForm = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<div className="columns-2 gap-5 mb-5">
-				<label>
-					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+			<div className="columns-1 xl:columns-2 gap-5 mb-5">
+				<label className="mb-5 inline-block w-full xl:mb-0 xl:inline">
+					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
 						First Name
 					</span>
 					<input
@@ -68,12 +68,12 @@ const RehomeRegisterForm = () => {
 						type="text"
 						name="firstName"
 						placeholder="First Name"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
 					/>
 					<p role="alert" className="text-red-700 text-xs">{errors.firstName?.message}</p>
 				</label>
 				<label>
-					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
 						Last Name
 					</span>
 					<input
@@ -81,14 +81,14 @@ const RehomeRegisterForm = () => {
 						type="text"
 						name="lastName"
 						placeholder="Last Name"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
 					/>
 					<p role="alert" className="text-red-700 text-xs">{errors.lastName?.message}</p>
 				</label>
 			</div>
 			<div className="mb-5">
 				<label>
-					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
 						Email
 					</span>
 					<input
@@ -96,14 +96,14 @@ const RehomeRegisterForm = () => {
 						type="email"
 						name="email"
 						placeholder="name@email.com"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
 					/>
 					<p role="alert" className="text-red-700 text-xs">{errors.email?.message}</p>
 				</label>
 			</div>
-			<div className="columns-2 gap-5 mb-2">
-				<label>
-					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+			<div className="columns-1 xl:columns-2 gap-5 mb-2">
+				<label className="mb-5 inline-block w-full xl:mb-0 xl:inline">
+					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
 						Password
 					</span>
 					<input
@@ -111,12 +111,12 @@ const RehomeRegisterForm = () => {
 						type="password"
 						name="password"
 						placeholder="Password"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
 					/>
 					<p role="alert" className="text-red-700 text-xs">{errors.password?.message}</p>
 				</label>
 				<label>
-					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+					<span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-xs md:text-sm font-medium text-slate-700">
 						Confirm Password
 					</span>
 					<input
@@ -124,7 +124,7 @@ const RehomeRegisterForm = () => {
 						type="password"
 						name="confirmPassword"
 						placeholder="Confirm Password"
-						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+						className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md text-xs sm:text-sm focus:ring-1"
 					/>
 					<p role="alert" className="text-red-700 text-xs">{errors.confirmPassword?.message}</p>
 				</label>
@@ -137,7 +137,7 @@ const RehomeRegisterForm = () => {
 			<div className="w-full relative">
 				<button
 					disabled={loading}
-					className={`w-full inline-flex items-center justify-center rounded-lg px-8 py-2 text-primary-black ${loading ? 'bg-primary/75 cursor-not-allowed' : 'bg-primary'}`}
+					className={`text-sm lg:text-base w-full inline-flex items-center justify-center rounded-lg px-8 py-2 text-primary-black ${loading ? 'bg-primary/75 cursor-not-allowed' : 'bg-primary'}`}
 				>
 					{loading && <Spinner />}
 					Register Now

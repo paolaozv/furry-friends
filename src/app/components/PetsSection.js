@@ -6,7 +6,7 @@ const PetsSection = () => {
   const { pets } = usePetsContext();
 
   return (
-    <div className="mt-20">
+    <div className="mt-8 md:mt-14 lg:mt-20">
       <PetListForAdoption pets={pets} />
     </div>
   )

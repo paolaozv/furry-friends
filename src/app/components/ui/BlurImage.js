@@ -6,7 +6,7 @@ const BlurImage = ({ photo, name }) => {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <div className="rounded-md w-full overflow-hidden bg-gray-200 aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-5">
+    <div className="rounded-md w-full overflow-hidden bg-gray-200 aspect-w-1 aspect-h-1 2xl:aspect-w-7 2xl:aspect-h-5">
       <Image
         alt={name}
         src={photo}

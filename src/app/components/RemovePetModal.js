@@ -26,19 +26,19 @@ const RemovePetModal = () => {
       <div className="relative w-full h-full flex justify-center bg-transparent">
         <div className="relative bg-white rounded-lg shadow m-auto">
           <div className="p-6 space-y-6">
-            <p>Are you sure you want to delete a pet?</p>
+            <p className="text-sm md:text-base">Are you sure you want to delete a pet?</p>
           </div>
           <div className="flex items-center justify-between p-6 rounded-b">
             <button
               onClick={() => toggleModalToRemoveAPet()}
-              className="bg-white border rounded-lg px-6 py-1 text-primary-black"
+              className="bg-white border rounded-lg px-3 lg:px-6 py-1 text-primary-black text-sm lg:text-base"
             >
               Cancel
             </button>
             <button
               disabled={loading}
               onClick={confirmDeletion}
-              className="bg-primary rounded-lg px-4 py-1 text-primary-black flex items-center"
+              className="bg-primary rounded-lg px-3 lg:px-4 py-1 text-primary-black flex items-center text-sm lg:text-base"
             >
               {loading && <Spinner />}
               Confirm
