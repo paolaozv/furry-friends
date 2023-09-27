@@ -3,11 +3,17 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import LoginForm from "../components/forms/LoginForm";
 
+// Metadata
+/**
+ * It is used to define the application metadata,
+ * which improves SEO and web shareability.
+ */
 export const metadata = {
   title: 'Login | Adopt a furry friend',
   description: 'This website has been created with the purpose of finding a home for dogs and cats.',
 };
 
+// Login page UI(User Interface).
 export default function Page() {
 	return (
 		<main>

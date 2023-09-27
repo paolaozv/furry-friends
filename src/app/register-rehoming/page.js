@@ -2,11 +2,17 @@
 import Layout from "../components/Layout";
 import RehomeRegisterForm from "../components/forms/RehomeRegisterForm";
 
+// Metadata
+/**
+ * It is used to define the application metadata,
+ * which improves SEO and web shareability.
+ */
 export const metadata = {
   title: 'Rehome | Adopt a furry friend',
   description: 'This website has been created with the purpose of finding a home for dogs and cats.',
 };
 
+// Register page UI(User Interface) for users who wants to rehome a pet.
 export default function Page() {
 	return (
 		<main>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
  
+// Not found page UI(User Interface)
 export default function NotFound() {
   return (
     <div className="w-full h-screen bg-primary/70 flex content-center items-center justify-center">

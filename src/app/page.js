@@ -2,11 +2,17 @@
 import Layout from "./components/Layout";
 import PetsSection from "./components/PetsSection";
 
+// Metadata
+/**
+ * It is used to define the application metadata,
+ * which improves SEO and web shareability.
+ */
 export const metadata = {
   title: 'Adopt a furry friend',
   description: 'This website has been created with the purpose of finding a home for dogs and cats.',
 };
 
+// Home page UI(User Interface)
 export default function Home() {
   return (
     <main>

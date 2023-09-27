@@ -1,16 +1,12 @@
 // Dashboard Page
 "use client"; // This is a client component
-import { getFirestore } from "firebase/firestore";
 import Image from "next/image";
 import Link from "next/link";
 import { useAuthContext } from "@/context/auth.context";
 import { usePetsContext } from "@/context/pets.context";
-import firebase_app from "@/app/firebase/config";
 import PetListForAdoption from "@/app/components/list/PetListForAdoption";
 import RemovePetModal from "@/app/components/RemovePetModal";
 import ConfirmPetAdoptionRequestModal from "@/app/components/ConfirmPetAdoptionRequestModal";
-
-const db = getFirestore(firebase_app);
 
 export default function Page() {
   const { userInfo } = useAuthContext();

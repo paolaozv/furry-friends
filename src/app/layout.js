@@ -7,14 +7,20 @@ import ProtectedRoute from "@/app/components/ProtectedRoute";
 import UnProtectedRoute from "@/app/components/UnProtectedRoute";
 import "./globals.css"
 
+// Google Font
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap'
+  subsets: ['latin'], // Used to reduce the size of the font file - improves performance.
+  variable: '--font-inter', // To use in the CSS.
+  display: 'swap' // Changes the font family after page has loaded.
 })
 
 const noAuthRequired = ["/", "/login", "/register-adoption", "/register-rehoming"];
 
+// Root Layout
+/**
+ * UI(User Interface): This is a required layout,
+ * and it is shared across all pages in the application
+ */
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 

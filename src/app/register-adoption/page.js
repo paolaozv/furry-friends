@@ -2,11 +2,17 @@
 import Layout from "../components/Layout";
 import AdoptionRegisterForm from "../components/forms/AdoptionRegisterForm";
 
+// Metadata
+/**
+ * It is used to define the application metadata,
+ * which improves SEO and web shareability.
+ */
 export const metadata = {
   title: 'Adopt | Adopt a furry friend',
   description: 'This website has been created with the purpose of finding a home for dogs and cats.',
 };
 
+// Register page UI(User Interface) for users who wants to adopt a pet.
 export default function Page() {
 	return (
 		<main>
