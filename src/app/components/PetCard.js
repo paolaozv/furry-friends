@@ -16,7 +16,7 @@ const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, reques
 
   return (
     <div>
-      <div className="2xl:w-96 relative">
+      <div className="relative">
         <BlurImage photo={photo} name={name} />
       </div>
       <div className="border-x border-b rounded-b-lg py-4 px-3 md:py-6 md:px-4">
@@ -24,7 +24,7 @@ const PetCard = ({ id, photo, name, age, breed, description, rescueGroup, reques
           <h4 className="font-semibold text-base lg:text-lg">{name}</h4>
           <p className="text-sm lg:text-base">Age: {age}</p>
         </div>
-        <p className="font-light text-xs lg:text-sm">{breed}</p>
+        <p className="font-light text-xs lg:text-sm">Breed: {breed}</p>
         <p className="mt-2 text-sm lg:text-base">{description}</p>
         <div className="text-center mt-3 lg:mt-6">
           {!user &&
