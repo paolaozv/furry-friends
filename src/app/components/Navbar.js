@@ -84,6 +84,18 @@ const Navbar = () => {
 								/>
 								<Link href="/register-rehoming">I want to rehome</Link>
 							</li>
+							<li className="m-5 text-primary-black text-sm lg:text-base flex items-center">
+								<Image
+									src="/chevron.svg"
+									alt="Arrow"
+									width={0}
+									height={0}
+									sizes="100vw"
+									className="w-2 h-auto mr-2"
+									priority
+								/>
+								<Link href="/login">Sign in</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
