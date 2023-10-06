@@ -26,6 +26,11 @@ pnpm dev
 ```
 * Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## User Test
+
+* user client email: joe@gmail.com - password: 123456
+* admin client email: paolaozv@gmail.com - password: 123456
+
 ## Tools
 
 * [Next.js](https://nextjs.org/)
